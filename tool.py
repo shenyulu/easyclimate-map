@@ -62,19 +62,22 @@ def read_shapefile_from_7z(filepath: str, **kwargs) -> GeoDataFrame:
     --------
     geopandas.read_file : For available keyword arguments and reading options.
     """
-    with tempfile.TemporaryDirectory() as tmpdir:
-        # Extract the entire archive to temporary directory
+    from functools import lru_cache
+    from pathlib import Path
+
+    @lru_cache(maxsize=10)
+    def extract_7z_once(filepath: str):
+        """Cache the decompression result to avoid repeated decompression."""
+        tmpdir = tempfile.mkdtemp()
         with py7zr.SevenZipFile(filepath, 'r') as archive:
             archive.extractall(path=tmpdir)
-        
-        # Find .shp files in the extracted contents
-        shp_files = [f for f in os.listdir(tmpdir) if f.endswith('.shp')]
-        
-        if not shp_files:
-            raise FileNotFoundError("No .shp file found in the 7z archive")
-        
-        # Read the shapefile using GeoPandas
-        shp_path = os.path.join(tmpdir, shp_files[0])
-        gdf = gpd.read_file(shp_path, **kwargs)
+        return tmpdir
+
+
+    tmpdir = extract_7z_once(filepath)
+    shp_files = list(Path(tmpdir).glob("*.shp"))
     
-    return gdf
+    if not shp_files:
+        raise FileNotFoundError("No .shp file found in the 7z archive")
+    
+    return gpd.read_file(shp_files[0], **kwargs)
