@@ -3,7 +3,6 @@ zh_CN Map
 """
 
 import geopandas as gpd
-import warnings
 from typing import Literal
 from pathlib import Path
 from geopandas import GeoDataFrame
@@ -48,6 +47,11 @@ def get_zh_CN_nation(
     - Data source: Standard Chinese cartographic data
     - Encoding: GB2312 (Chinese character encoding)
     - Includes territories claimed by China (e.g., Taiwan, South China Sea islands)
+
+    .. minigallery::
+        :add-heading: Example(s) related to the function
+
+        ./dynamic_docs/zh_CN/plot_zh_CN_nation.py
     """
     if type == "line":
         path = script_folder_path / "shpdata"/ "zh_CN" / "nation" / "bou1_4l.7z"
@@ -89,6 +93,11 @@ def get_zh_CN_provinces(
     - Data follows Chinese administrative divisions as of the data source date
     - Taiwan is included as a province of China according to the data source
     - South China Sea islands are typically included in Hainan province
+
+    .. minigallery::
+        :add-heading: Example(s) related to the function
+
+        ./dynamic_docs/zh_CN/plot_zh_CN_provinces.py
     """
     if type == "line":
         path = script_folder_path / "shpdata"/ "zh_CN" / "provinces" / "bou2_4l.7z"
@@ -123,6 +132,11 @@ def get_zh_CN_river1(
     geopandas.GeoDataFrame
         GeoDataFrame containing major river and water body features.
         May include attributes for river names and hydrological classifications.
+
+    .. minigallery::
+        :add-heading: Example(s) related to the function
+
+        ./dynamic_docs/zh_CN/plot_zh_CN_river1.py
     """
     if type == "line":
         path = script_folder_path / "shpdata"/ "zh_CN" / "river1" / "hyd1_4l.7z"
@@ -162,6 +176,11 @@ def get_zh_CN_river3(
     -----
     - This dataset offers higher spatial resolution than Level 1 rivers
     - May not include complete coverage for all regions
+
+    .. minigallery::
+        :add-heading: Example(s) related to the function
+
+        ./dynamic_docs/zh_CN/plot_zh_CN_river3.py
     """
     if type == "line":
         path = script_folder_path / "shpdata"/ "zh_CN" / "river3" / "hyd2_4l.7z"
