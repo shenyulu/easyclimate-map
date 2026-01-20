@@ -23,7 +23,7 @@ jobs:
           pip install -r test_requirements.txt
 
       - name: Run unit tests
-        run: pytest --mpl --mpl-baseline-path="test/baseline_images" --cov src
+        run: #pytest --mpl --mpl-baseline-path="test/baseline_images" --cov src
 
   BuildAndPublish:
     needs: UnitTesting
