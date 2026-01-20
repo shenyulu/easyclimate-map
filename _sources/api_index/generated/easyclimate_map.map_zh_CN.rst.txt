@@ -1,0 +1,17 @@
+﻿easyclimate\_map.map\_zh\_CN
+============================
+
+.. automodule:: easyclimate_map.map_zh_CN
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      get_zh_CN_1st_administration
+      get_zh_CN_2nd_administration
+      get_zh_CN_nation
+      get_zh_CN_provinces
+      get_zh_CN_river1
+      get_zh_CN_river3
+   

@@ -1,0 +1,43 @@
+easyclimate_map.map_tibetan_plateau
+===================================
+
+.. py:module:: easyclimate_map.map_tibetan_plateau
+
+.. autoapi-nested-parse::
+
+   Tibetan Plateau (Qinghai-Xizang Plateau)
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   easyclimate_map.map_tibetan_plateau.get_Tibetan_Plateau_basins
+
+
+Module Contents
+---------------
+
+.. py:function:: get_Tibetan_Plateau_basins() -> geopandas.GeoDataFrame
+
+   Get Tibetan Plateau basins data in polygon format.
+
+   .. tip::
+
+       - Zhang, G. (2019). Dataset of river basins map over the TP（2016）. National Tibetan Plateau / Third Pole Environment Data Center. https://doi.org/10.11888/BaseGeography.tpe.249465.file. https://cstr.cn/18406.11.BaseGeography.tpe.249465.file.
+       - Zhang, G.Q., Yao, T.D., Xie, H.J., Kang, S.C., &Lei, Y.B. (2013). Increased mass over the Tibetan Plateau: From lakes or glaciers? Geophysical Research Letters, 40(10), 2125-2130. https://doi.org/10.1002/grl.50462
+
+   Returns
+   -------
+   geopandas.GeoDataFrame
+       GeoDataFrame containing Tibetan Plateau basins.
+       The CRS is typically EPSG:4326 (WGS84).
+
+   .. minigallery::
+       :add-heading: Example(s) related to the function
+
+       ./dynamic_docs/tibetan_plateau/plot_tibetan_plateau_basins.py
+
+

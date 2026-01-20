@@ -1,0 +1,14 @@
+﻿easyclimate\_map.tool
+=====================
+
+.. automodule:: easyclimate_map.tool
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      extract_outer_boundary
+      read_shapefile_from_7z
+      transfer_boundary_to_polygon
+   

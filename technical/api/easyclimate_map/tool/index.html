@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" data-accent-color="violet" data-content_root="../../../../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>easyclimate_map.tool - easyclimate-map v2026.1.0 documentation</title><link rel="index" title="Index" href="../../../../genindex.html" /><link rel="search" title="Search" href="../../../../search.html" /><script>
+    function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
+    setColorMode(localStorage._theme||"auto");
+  </script><link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=e1a1ceaf" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/shibuya.css?v=44020203" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sg_gallery.css?v=d2d258e8" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sg_gallery-binder.css?v=f4aeca0c" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link media="print" rel="stylesheet" type="text/css" href="../../../../_static/print.css?v=20ff2c19" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sy-f-text: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+  --sy-f-heading: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+}
+</style>
+    <meta property="og:type" content="website"/><meta property="og:title" content="easyclimate_map.tool"/>
+    <meta name="twitter:card" content="summary"/>
+  </head>
+<body><div class="sy-head">
+  <div class="sy-head-blur"></div>
+  <div class="sy-head-inner sy-container mx-auto">
+    <a class="sy-head-brand" href="../../../../index.html">
+      <img class="light-logo" src="../../../../_static/easyclimate_map_logo_mini.png" alt="easyclimate-map" height="28" loading="lazy" />
+      <img class="dark-logo" src="../../../../_static/easyclimate_map_logo_mini.png" alt="easyclimate-map" height="28" loading="lazy" />
+      <strong>easyclimate-map</strong>
+    </a>
+    <div class="sy-head-nav" id="head-nav">
+      <nav class="sy-head-links"></nav>
+      <div class="sy-head-extra flex items-center print:hidden"><form class="searchbox flex items-center" action="../../../../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <kbd>/</kbd>
+</form><div class="sy-head-socials"></div></div>
+    </div>
+    <div class="sy-head-actions flex items-center shrink-0 print:hidden"><button class="js-theme theme-switch flex items-center"
+data-aria-auto="Switch to light color mode"
+data-aria-light="Switch to dark color mode"
+data-aria-dark="Switch to auto color mode">
+<i class="i-lucide theme-icon"></i>
+</button><button class="md:hidden flex items-center js-menu" aria-label="Menu" type="button" aria-controls="head-nav" aria-expanded="false">
+        <div class="hamburger">
+          <span class="hamburger_1"></span>
+          <span class="hamburger_2"></span>
+          <span class="hamburger_3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="sy-page sy-container flex mx-auto">
+  <aside id="lside" class="sy-lside md:w-72 md:shrink-0 print:hidden">
+    <div class="sy-lside-inner md:sticky">
+      <div class="sy-scrollbar p-6">
+        <div class="globaltoc" data-expand-depth="0"><p class="caption" role="heading" aria-level="3"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../install.html">Installation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../auto_gallery/index.html">Gallery</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../auto_gallery/tibetan_plateau/index.html">Tibetan Plateau (Qinghai-Xizang Plateau)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../auto_gallery/tibetan_plateau/plot_tibetan_plateau_basins.html">Tibetan Plateau (Qinghai-Xizang Plateau) basins Map</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../auto_gallery/zh_CN/index.html">zh-CN</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../auto_gallery/zh_CN/plot_zh_CN_nation.html">zh-CN National Map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../auto_gallery/zh_CN/plot_zh_CN_provinces.html">zh-CN Provincial Map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../auto_gallery/zh_CN/plot_zh_CN_river1.html">zh-CN Level 1 Rivers Map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../auto_gallery/zh_CN/plot_zh_CN_river3.html">zh-CN Level 3 Rivers Map</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../legal.html">Legal Notice</a></li>
+</ul>
+<p class="caption" role="heading" aria-level="3"><span class="caption-text">Reference documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api_index/index.html">List of Functions and Classes (API)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../api_index/generated/easyclimate_map.map_zh_CN.html">easyclimate_map.map_zh_CN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../api_index/generated/easyclimate_map.map_tibetan_plateau.html">easyclimate_map.map_tibetan_plateau</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../api_index/generated/easyclimate_map.tool.html">easyclimate_map.tool</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading" aria-level="3"><span class="caption-text">Community</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/shenyulu/easyclimate-map">Source Code on GitHub</a></li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="lside-overlay js-menu" role="button" aria-label="Close left sidebar" aria-controls="lside" aria-expanded="false"></div>
+  <aside id="rside" class="sy-rside pb-3 w-64 shrink-0 order-last">
+    <button class="rside-close js-menu xl:hidden" aria-label="Close Table of Contents" type="button" aria-controls="rside" aria-expanded="false">
+      <i class="i-lucide close"></i>
+    </button>
+    <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>On this page</h3><ul>
+<li><a class="reference internal" href="#functions">Functions</a></li>
+<li><a class="reference internal" href="#module-contents">Module Contents</a><ul>
+<li><a class="reference internal" href="#easyclimate_map.tool.read_shapefile_from_7z"><code class="docutils literal notranslate"><span class="pre">read_shapefile_from_7z()</span></code></a></li>
+<li><a class="reference internal" href="#easyclimate_map.tool.extract_outer_boundary"><code class="docutils literal notranslate"><span class="pre">extract_outer_boundary()</span></code></a></li>
+<li><a class="reference internal" href="#easyclimate_map.tool.transfer_boundary_to_polygon"><code class="docutils literal notranslate"><span class="pre">transfer_boundary_to_polygon()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div><div id="ethical-ad-placement" data-ea-publisher="readthedocs"></div></div>
+  </aside>
+  <div class="rside-overlay js-menu" role="button" aria-label="Close Table of Contents" aria-controls="rside" aria-expanded="false"></div>
+  <main class="sy-main w-full max-sm:max-w-full print:pt-6">
+<div class="sy-breadcrumbs" role="navigation">
+  <div class="sy-breadcrumbs-inner flex items-center">
+    <div class="md:hidden mr-3">
+      <button class="js-menu" aria-label="Menu" type="button" aria-controls="lside" aria-expanded="false">
+        <i class="i-lucide menu"></i>
+      </button>
+    </div>
+    <ol class="flex-1" itemscope itemtype="https://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="../../../../index.html"><span itemprop="name">easyclimate-map</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="1" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <strong itemprop="name">easyclimate_map.tool</strong>
+        <meta itemprop="position" content="2" />
+      </li></ol>
+    <div class="xl:hidden ml-1">
+      <button class="js-menu" aria-label="Show table of contents" type="button" aria-controls="rside"
+        aria-expanded="false">
+        <i class="i-lucide outdent"></i>
+      </button>
+    </div>
+  </div>
+</div><div class="flex flex-col break-words justify-between">
+      <div class="relative min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
+  <article class="yue" role="main">
+          <section id="module-easyclimate_map.tool">
+<span id="easyclimate-map-tool"></span><h1>easyclimate_map.tool<a class="headerlink" href="#module-easyclimate_map.tool" title="Link to this heading">¶</a></h1>
+<p>Utility</p>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#easyclimate_map.tool.read_shapefile_from_7z" title="easyclimate_map.tool.read_shapefile_from_7z"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_shapefile_from_7z</span></code></a>(→ geopandas.GeoDataFrame)</p></td>
+<td><p>Read a shapefile directly from a 7z archive without extracting to disk.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#easyclimate_map.tool.extract_outer_boundary" title="easyclimate_map.tool.extract_outer_boundary"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract_outer_boundary</span></code></a>(→ geopandas.GeoDataFrame)</p></td>
+<td><p>Extract the outer boundary (exterior ring only) from a GeoDataFrame.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#easyclimate_map.tool.transfer_boundary_to_polygon" title="easyclimate_map.tool.transfer_boundary_to_polygon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transfer_boundary_to_polygon</span></code></a>(→ geopandas.GeoDataFrame)</p></td>
+<td><p>Convert boundary lines (LineString or MultiLineString) to polygon geometries.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="easyclimate_map.tool.read_shapefile_from_7z">
+<span class="sig-prename descclassname"><span class="pre">easyclimate_map.tool.</span></span><span class="sig-name descname"><span class="pre">read_shapefile_from_7z</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">geopandas.GeoDataFrame</span></span></span><a class="headerlink" href="#easyclimate_map.tool.read_shapefile_from_7z" title="Link to this definition">¶</a></dt>
+<dd><p>Read a shapefile directly from a 7z archive without extracting to disk.</p>
+<p>This function extracts a shapefile from a compressed 7z archive into a temporary
+directory, loads it as a GeoDataFrame using GeoPandas, and returns the result.
+All keyword arguments are passed through to <cite>gpd.read_file()</cite>.</p>
+<section id="parameters">
+<h3>Parameters<a class="headerlink" href="#parameters" title="Link to this heading">¶</a></h3>
+<dl>
+<dt>filepath<span class="classifier">str</span></dt><dd><p>Path to the 7z archive containing the shapefile.</p>
+</dd>
+<dt><a href="#id1"><span class="problematic" id="id2">**</span></a>kwargs<span class="classifier">dict, optional</span></dt><dd><p>Additional keyword arguments to pass to <cite>gpd.read_file()</cite>.
+Common arguments include:
+- bbox : tuple</p>
+<blockquote>
+<div><p>Filter by bounding box (minx, miny, maxx, maxy)</p>
+</div></blockquote>
+<ul class="simple">
+<li><dl class="simple">
+<dt>mask<span class="classifier">geometry</span></dt><dd><p>Filter by geometry mask</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>rows<span class="classifier">int</span></dt><dd><p>Number of rows to read</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>encoding<span class="classifier">str</span></dt><dd><p>File encoding (e.g., ‘utf-8’)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>driver<span class="classifier">str</span></dt><dd><p>GDAL/OGR driver name</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="returns">
+<h3>Returns<a class="headerlink" href="#returns" title="Link to this heading">¶</a></h3>
+<dl class="simple">
+<dt>geopandas.GeoDataFrame</dt><dd><p>A GeoDataFrame containing the shapefile data.</p>
+</dd>
+</dl>
+</section>
+<section id="raises">
+<h3>Raises<a class="headerlink" href="#raises" title="Link to this heading">¶</a></h3>
+<dl class="simple">
+<dt>FileNotFoundError</dt><dd><p>If the 7z file doesn’t exist or doesn’t contain any .shp files.</p>
+</dd>
+</dl>
+</section>
+<section id="notes">
+<h3>Notes<a class="headerlink" href="#notes" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>The function creates a temporary directory that is automatically cleaned up.</p></li>
+<li><p>Only the first .shp file found in the archive will be read.</p></li>
+<li><p>Shapefile companion files (.shx, .dbf, .prj) must also be present in the archive.</p></li>
+</ul>
+</section>
+<section id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h3>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="gp">&gt;&gt;&gt; </span><span class="n">gdf</span> <span class="o">=</span> <span class="n">read_shapefile_from_7z</span><span class="p">(</span><span class="s1">&#39;data.7z&#39;</span><span class="p">)</span>
+</span><span data-line="2"><span class="gp">&gt;&gt;&gt; </span><span class="n">gdf</span> <span class="o">=</span> <span class="n">read_shapefile_from_7z</span><span class="p">(</span><span class="s1">&#39;data.7z&#39;</span><span class="p">,</span> <span class="n">bbox</span><span class="o">=</span><span class="p">(</span><span class="n">xmin</span><span class="p">,</span> <span class="n">ymin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">ymax</span><span class="p">))</span>
+</span><span data-line="3"><span class="gp">&gt;&gt;&gt; </span><span class="n">gdf</span> <span class="o">=</span> <span class="n">read_shapefile_from_7z</span><span class="p">(</span><span class="s1">&#39;data.7z&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">rows</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</span></pre></div>
+</div>
+</section>
+<section id="see-also">
+<h3>See Also<a class="headerlink" href="#see-also" title="Link to this heading">¶</a></h3>
+<p>geopandas.read_file : For available keyword arguments and reading options.</p>
+</section>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="easyclimate_map.tool.extract_outer_boundary">
+<span class="sig-prename descclassname"><span class="pre">easyclimate_map.tool.</span></span><span class="sig-name descname"><span class="pre">extract_outer_boundary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gdf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dissolve_by</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">geopandas.GeoDataFrame</span></span></span><a class="headerlink" href="#easyclimate_map.tool.extract_outer_boundary" title="Link to this definition">¶</a></dt>
+<dd><p>Extract the outer boundary (exterior ring only) from a GeoDataFrame.</p>
+<p>This function dissolves all features in a GeoDataFrame and extracts only
+the outer boundaries, excluding any interior holes or isolated internal lines.</p>
+<section id="id3">
+<h3>Parameters<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<dl class="simple">
+<dt>gdf<span class="classifier">geopandas.GeoDataFrame</span></dt><dd><p>Input GeoDataFrame containing polygon or multipolygon geometries.</p>
+</dd>
+<dt>dissolve_by<span class="classifier">str or list of str, optional</span></dt><dd><p>Column name(s) to dissolve by. If None (default), dissolves all features
+into a single geometry.</p>
+</dd>
+</dl>
+</section>
+<section id="id4">
+<h3>Returns<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<dl class="simple">
+<dt>geopandas.GeoDataFrame</dt><dd><p>A GeoDataFrame containing only the outer boundary lines (LineString or
+MultiLineString geometry).</p>
+</dd>
+</dl>
+</section>
+<section id="id5">
+<h3>Examples<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
+</span><span data-line="2"><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Load your data</span>
+</span><span data-line="3"><span class="gp">&gt;&gt;&gt; </span><span class="n">gdf</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="s1">&#39;basins.shp&#39;</span><span class="p">)</span>
+</span><span data-line="4"><span class="gp">&gt;&gt;&gt;</span>
+</span><span data-line="5"><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Extract outer boundary of all features</span>
+</span><span data-line="6"><span class="gp">&gt;&gt;&gt; </span><span class="n">boundary</span> <span class="o">=</span> <span class="n">extract_outer_boundary</span><span class="p">(</span><span class="n">gdf</span><span class="p">)</span>
+</span><span data-line="7"><span class="gp">&gt;&gt;&gt;</span>
+</span><span data-line="8"><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Extract boundary by specific attribute</span>
+</span><span data-line="9"><span class="gp">&gt;&gt;&gt; </span><span class="n">boundary</span> <span class="o">=</span> <span class="n">extract_outer_boundary</span><span class="p">(</span><span class="n">gdf</span><span class="p">,</span> <span class="n">dissolve_by</span><span class="o">=</span><span class="s1">&#39;BasinName&#39;</span><span class="p">)</span>
+</span><span data-line="10"><span class="gp">&gt;&gt;&gt;</span>
+</span><span data-line="11"><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Save the result</span>
+</span><span data-line="12"><span class="gp">&gt;&gt;&gt; </span><span class="n">boundary</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s1">&#39;boundary.shp&#39;</span><span class="p">)</span>
+</span></pre></div>
+</div>
+</section>
+<section id="id6">
+<h3>Notes<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>For MULTIPOLYGON geometries, extracts the exterior ring of each polygon part</p></li>
+<li><p>Interior holes (e.g., lakes, enclaves) are excluded</p></li>
+<li><p>The output CRS is preserved from the input GeoDataFrame</p></li>
+<li><p>If input contains multiple disconnected regions, output will be MultiLineString</p></li>
+</ul>
+</section>
+<section id="id7">
+<h3>See Also<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<p>geopandas.GeoDataFrame.dissolve : Dissolve geometries
+shapely.geometry.Polygon.exterior : Extract exterior ring</p>
+<section id="example-s-related-to-the-function">
+<h4>Example(s) related to the function<a class="headerlink" href="#example-s-related-to-the-function" title="Link to this heading">¶</a></h4>
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates how to load, visualize, and process basin boundaries  over the Tibetan Plateau using easyclimate-map. We show how to dissolve  multiple basin polygons, extract their outer boundaries, and reconstruct polygon  geometries from boundary lines."><img alt="" src="../../../../_images/sphx_glr_plot_tibetan_plateau_basins_thumb.png" />
+<p><a class="reference internal" href="../../../../auto_gallery/tibetan_plateau/plot_tibetan_plateau_basins.html#sphx-glr-auto-gallery-tibetan-plateau-plot-tibetan-plateau-basins-py"><span class="std std-ref">Tibetan Plateau (Qinghai-Xizang Plateau) basins Map</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Tibetan Plateau (Qinghai-Xizang Plateau) basins Map</div>
+</div></div></section>
+</section>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="easyclimate_map.tool.transfer_boundary_to_polygon">
+<span class="sig-prename descclassname"><span class="pre">easyclimate_map.tool.</span></span><span class="sig-name descname"><span class="pre">transfer_boundary_to_polygon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">boundary_gdf</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">geopandas.GeoDataFrame</span></span></span><a class="headerlink" href="#easyclimate_map.tool.transfer_boundary_to_polygon" title="Link to this definition">¶</a></dt>
+<dd><p>Convert boundary lines (LineString or MultiLineString) to polygon geometries.</p>
+<p>This function reconstructs polygon geometries from their boundary lines.
+It assumes the boundary lines form closed rings.</p>
+<section id="id8">
+<h3>Parameters<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<dl class="simple">
+<dt>boundary_gdf<span class="classifier">geopandas.GeoDataFrame</span></dt><dd><p>Input GeoDataFrame containing LineString or MultiLineString geometries
+representing polygon boundaries.</p>
+</dd>
+</dl>
+</section>
+<section id="id9">
+<h3>Returns<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
+<dl class="simple">
+<dt>geopandas.GeoDataFrame</dt><dd><p>A GeoDataFrame containing reconstructed Polygon or MultiPolygon geometries.</p>
+</dd>
+</dl>
+</section>
+<section id="id10">
+<h3>Examples<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h3>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
+</span><span data-line="2"><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Extract boundary first</span>
+</span><span data-line="3"><span class="gp">&gt;&gt;&gt; </span><span class="n">boundary</span> <span class="o">=</span> <span class="n">extract_outer_boundary</span><span class="p">(</span><span class="n">gdf</span><span class="p">)</span>
+</span><span data-line="4"><span class="gp">&gt;&gt;&gt;</span>
+</span><span data-line="5"><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Convert boundary back to polygon</span>
+</span><span data-line="6"><span class="gp">&gt;&gt;&gt; </span><span class="n">polygon</span> <span class="o">=</span> <span class="n">boundary_to_polygon</span><span class="p">(</span><span class="n">boundary</span><span class="p">)</span>
+</span><span data-line="7"><span class="gp">&gt;&gt;&gt;</span>
+</span><span data-line="8"><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Save the result</span>
+</span><span data-line="9"><span class="gp">&gt;&gt;&gt; </span><span class="n">polygon</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s1">&#39;reconstructed_polygon.shp&#39;</span><span class="p">)</span>
+</span></pre></div>
+</div>
+</section>
+<section id="id11">
+<h3>Notes<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Input boundary lines must form closed rings</p></li>
+<li><p>For MultiLineString input, creates MultiPolygon output</p></li>
+<li><p>The output CRS is preserved from the input GeoDataFrame</p></li>
+<li><p>This creates simple polygons without interior holes</p></li>
+</ul>
+</section>
+<section id="id12">
+<h3>See Also<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h3>
+<p><a class="reference internal" href="#easyclimate_map.tool.extract_outer_boundary" title="easyclimate_map.tool.extract_outer_boundary"><code class="xref py py-func docutils literal notranslate"><span class="pre">extract_outer_boundary()</span></code></a> : Extract outer boundary from polygons
+shapely.geometry.Polygon : Polygon constructor</p>
+<section id="id13">
+<h4>Example(s) related to the function<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h4>
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates how to load, visualize, and process basin boundaries  over the Tibetan Plateau using easyclimate-map. We show how to dissolve  multiple basin polygons, extract their outer boundaries, and reconstruct polygon  geometries from boundary lines."><img alt="" src="../../../../_images/sphx_glr_plot_tibetan_plateau_basins_thumb.png" />
+<p><a class="reference internal" href="../../../../auto_gallery/tibetan_plateau/plot_tibetan_plateau_basins.html#sphx-glr-auto-gallery-tibetan-plateau-plot-tibetan-plateau-basins-py"><span class="std std-ref">Tibetan Plateau (Qinghai-Xizang Plateau) basins Map</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Tibetan Plateau (Qinghai-Xizang Plateau) basins Map</div>
+</div></div></section>
+</section>
+</dd></dl>
+
+</section>
+</section>
+
+        </article><button class="back-to-top" type="button">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+  </svg>
+  <span>Back to top</span>
+</button><div class="navigation flex print:hidden"></div></div>
+    </div>
+  </main>
+</div>
+<footer class="sy-foot">
+  <div class="sy-foot-inner sy-container mx-auto">
+    <div class="sy-foot-reserved md:flex justify-between items-center">
+      <div class="sy-foot-copyright"><p>2026-2026, Shenyulu（深雨露） and easyclimate developers</p>
+  
+  <p>
+    Made with
+    
+    <a href="https://www.sphinx-doc.org/">Sphinx</a> and
+    
+    <a href="https://shibuya.lepture.com">Shibuya theme</a>.
+  </p>
+</div>
+      <div class="sy-foot-socials"></div>
+    </div>
+  </div>
+</footer>
+      <script src="../../../../_static/documentation_options.js?v=9fed09df"></script>
+      <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../_static/copybutton.js?v=f281be69"></script>
+      <script src="../../../../_static/design-tabs.js?v=f930bc37"></script>
+      <script src="../../../../_static/shibuya.js?v=cac61aee"></script></body>
+</html>

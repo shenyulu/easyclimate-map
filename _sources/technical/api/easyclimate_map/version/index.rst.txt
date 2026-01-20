@@ -1,0 +1,31 @@
+easyclimate_map.version
+=======================
+
+.. py:module:: easyclimate_map.version
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   easyclimate_map.version.__version__
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   easyclimate_map.version.show_versions
+
+
+Module Contents
+---------------
+
+.. py:data:: __version__
+   :value: '2026.1.0'
+
+
+.. py:function:: show_versions() -> str
+

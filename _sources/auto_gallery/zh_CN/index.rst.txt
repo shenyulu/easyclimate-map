@@ -1,0 +1,98 @@
+
+
+.. _sphx_glr_auto_gallery_zh_CN:
+
+zh-CN
+------------------------------------
+
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbnails">
+
+.. thumbnail-parent-div-open
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Import easyclimate-map for loading China boundary data, matplotlib.pyplot for plotting, and cartopy.crs for map projections. These libraries together support the retrieval and visualization of geographic data.">
+
+.. only:: html
+
+  .. image:: /auto_gallery/zh_CN/images/thumb/sphx_glr_plot_zh_CN_nation_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_auto_gallery_zh_CN_plot_zh_CN_nation.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">zh-CN National Map</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Import easyclimate-map for loading China provincial boundary data, matplotlib.pyplot for plotting, and cartopy.crs for map projections. These libraries together support the retrieval and visualization of geographic data.">
+
+.. only:: html
+
+  .. image:: /auto_gallery/zh_CN/images/thumb/sphx_glr_plot_zh_CN_provinces_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_auto_gallery_zh_CN_plot_zh_CN_provinces.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">zh-CN Provincial Map</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Import easyclimate-map for loading China level 1 river boundary data, matplotlib.pyplot for plotting, and cartopy.crs for map projections. These libraries together support the retrieval and visualization of geographic data.">
+
+.. only:: html
+
+  .. image:: /auto_gallery/zh_CN/images/thumb/sphx_glr_plot_zh_CN_river1_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_auto_gallery_zh_CN_plot_zh_CN_river1.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">zh-CN Level 1 Rivers Map</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Import easyclimate-map for loading China level 3 river boundary data, matplotlib.pyplot for plotting, and cartopy.crs for map projections. These libraries together support the retrieval and visualization of geographic data.">
+
+.. only:: html
+
+  .. image:: /auto_gallery/zh_CN/images/thumb/sphx_glr_plot_zh_CN_river3_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_auto_gallery_zh_CN_plot_zh_CN_river3.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">zh-CN Level 3 Rivers Map</div>
+    </div>
+
+
+.. thumbnail-parent-div-close
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /auto_gallery/zh_CN/plot_zh_CN_nation
+   /auto_gallery/zh_CN/plot_zh_CN_provinces
+   /auto_gallery/zh_CN/plot_zh_CN_river1
+   /auto_gallery/zh_CN/plot_zh_CN_river3
+

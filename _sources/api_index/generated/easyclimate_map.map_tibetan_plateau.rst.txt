@@ -1,0 +1,12 @@
+﻿easyclimate\_map.map\_tibetan\_plateau
+======================================
+
+.. automodule:: easyclimate_map.map_tibetan_plateau
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      get_Tibetan_Plateau_basins
+   
