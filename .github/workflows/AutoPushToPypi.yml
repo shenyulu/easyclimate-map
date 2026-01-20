@@ -28,6 +28,9 @@ jobs:
   BuildAndPublish:
     needs: UnitTesting
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
 
     steps:
       - uses: actions/checkout@v4
@@ -51,8 +54,12 @@ jobs:
           python -m build --no-isolation --sdist .
           python setup.py clean --all
 
+      - name: Debug OIDC env (safe)
+        run: |
+          echo "ACTIONS_ID_TOKEN_REQUEST_TOKEN is set? -> ${{ env.ACTIONS_ID_TOKEN_REQUEST_TOKEN != '' }}"
+          env | sort | grep -E 'ACTIONS_ID_TOKEN|ACTIONS_ID_TOKEN_REQUEST|GITHUB_TOKEN|GITHUB_EVENT_NAME' || true
+
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          password: ${{ secrets.PYPI_API_TOKEN }}
           packages-dir: dist/
