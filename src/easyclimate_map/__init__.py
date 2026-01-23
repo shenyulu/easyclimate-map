@@ -5,6 +5,7 @@ from .map.map_tibetan_plateau import *
 from .core.tool import *
 
 from rich import print
+
 print(
     "[bold yellow]<easyclimate-map notice>[/bold yellow]: "
     "Maps are provided [bold]as-is[/bold]. "

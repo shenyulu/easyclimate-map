@@ -26,8 +26,8 @@ The easyclimate-map is designed to Easily obtain map data for [easyclimate](http
 
 >   🚨 **This package is still undergoing rapid development.** 🚨
 >
->   All of the API (functions/classes/interfaces) is subject to change. 
->   There may be non-backward compatible changes as we experiment with new design ideas and implement new features. 
+>   All of the API (functions/classes/interfaces) is subject to change.
+>   There may be non-backward compatible changes as we experiment with new design ideas and implement new features.
 >   This is not a finished product, use with caution.
 
 ## 😯 How to install?

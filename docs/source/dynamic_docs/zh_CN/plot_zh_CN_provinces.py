@@ -28,7 +28,7 @@ zh_provinces_line.plot()
 # Add gridlines, coastlines, and China's provincial boundary line geometries (red lines, no fill).
 # This step demonstrates advanced map projections and geometry overlays.
 # Parameter Details:
-# 
+#
 # - set_extent: Defines the map display range.
 # - gridlines: Adds latitude/longitude grid with labels.
 # - coastlines: Draws global coastlines (50m resolution).
@@ -37,8 +37,8 @@ fig, ax = plt.subplots(subplot_kw={"projection": ccrs.PlateCarree(central_longit
 
 ax.set_extent([70, 140, 0, 50])
 ax.gridlines(
-    draw_labels=["left", "bottom"], 
-    color="grey", 
+    draw_labels=["left", "bottom"],
+    color="grey",
     alpha=0.5, linestyle="--"
 )
 ax.coastlines(color="k", lw = 0.5, resolution = "50m")
@@ -68,15 +68,15 @@ zh_provinces_polygon.plot()
 # Add gridlines, coastlines, and China's provincial boundary polygon geometries (light blue fill, no edges).
 # This step demonstrates area fill effects, suitable for region highlighting or climate zoning maps.
 # Parameter Details:
-# 
+#
 # - Similar to above step, but with facecolor="lightblue" for area fill and edgecolor="none" for no borders.
 # - Applicable for overlaying other data layers, such as temperature fields or precipitation distributions.
 fig, ax = plt.subplots(subplot_kw={"projection": ccrs.PlateCarree(central_longitude=180)})
 
 ax.set_extent([70, 140, 0, 50])
 ax.gridlines(
-    draw_labels=["left", "bottom"], 
-    color="grey", 
+    draw_labels=["left", "bottom"],
+    color="grey",
     alpha=0.5, linestyle="--"
 )
 ax.coastlines(color="k", lw = 0.5, resolution = "50m")

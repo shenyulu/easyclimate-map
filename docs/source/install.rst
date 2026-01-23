@@ -10,7 +10,7 @@ Installation Guide
 
 ----
 
-easyclimate-map is a user-friendly Python package designed to simplify the process of acquiring, 
+easyclimate-map is a user-friendly Python package designed to simplify the process of acquiring,
 handling, and visualizing geographic map data for environmental and climate analysis.
 
 
