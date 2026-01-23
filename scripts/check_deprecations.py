@@ -360,7 +360,7 @@ def main():
     parser.add_argument("--json", help="Save report to JSON file")
     args = parser.parse_args()
 
-    checker = DeprecationChecker(package_name = "easyclimate_map")
+    checker = DeprecationChecker(package_name="easyclimate_map")
     if args.next_version:
         checker.set_next_version(args.next_version)
 
