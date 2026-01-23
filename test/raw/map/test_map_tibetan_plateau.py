@@ -15,5 +15,5 @@ def test_get_Tibetan_Plateau_basins():
     tp_basins = eclmap.get_Tibetan_Plateau_basins()
 
     fig, ax = plt.subplots()
-    tp_basins.plot(ax = ax)
+    tp_basins.plot(ax=ax)
     return fig
