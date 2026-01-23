@@ -6,7 +6,7 @@ import geopandas as gpd
 from typing import Literal
 from pathlib import Path
 from geopandas import GeoDataFrame
-from .tool import read_shapefile_from_7z
+from ..core.tool import read_shapefile_from_7z
 
 __all__ = [
     "get_zh_CN_nation",

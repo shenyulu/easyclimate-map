@@ -1,8 +1,8 @@
 from .version import __version__, show_versions
 
-from .map_zh_CN import *
-from .map_tibetan_plateau import *
-from .tool import *
+from .map.map_zh_CN import *
+from .map.map_tibetan_plateau import *
+from .core.tool import *
 
 from rich import print
 print(

@@ -3,7 +3,7 @@ Tibetan Plateau (Qinghai-Xizang Plateau)
 """
 from pathlib import Path
 from geopandas import GeoDataFrame
-from .tool import read_shapefile_from_7z
+from ..core.tool import read_shapefile_from_7z
 from rich import print
 
 __all__ = [
