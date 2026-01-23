@@ -1,4 +1,5 @@
-pytest --mpl --mpl-baseline-path="test/baseline_images" --cov src
+$env:PYTHONPATH = (Join-Path (Get-Location) "src")
+pytest --mpl --mpl-baseline-path="test/baseline_images" --cov=easyclimate_map
 
 # 获取当前 Python 解释器路径
 # Gets the current Python interpreter path

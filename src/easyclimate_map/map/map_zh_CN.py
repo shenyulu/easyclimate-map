@@ -213,6 +213,11 @@ def get_zh_CN_1st_administration() -> GeoDataFrame:
     -----
     - Typically includes 34 administrative centers (31 provincial-level + 3 special)
     - Coordinates represent government seat locations
+
+    .. minigallery::
+        :add-heading: Example(s) related to the function
+
+        ./dynamic_docs/zh_CN/plot_zh_CN_1st_administration.py
     """
     path = (
         script_folder_path / "shpdata" / "zh_CN" / "administration_1st" / "res1_4m.7z"
@@ -240,6 +245,11 @@ def get_zh_CN_2nd_administration() -> GeoDataFrame:
     -----
     - Covers approximately 333 prefecture-level divisions in China
     - Includes both urban and rural administrative centers
+
+    .. minigallery::
+        :add-heading: Example(s) related to the function
+
+        ./dynamic_docs/zh_CN/plot_zh_CN_2nd_administration.py
     """
     path = (
         script_folder_path / "shpdata" / "zh_CN" / "administration_2nd" / "res2_4m.7z"
