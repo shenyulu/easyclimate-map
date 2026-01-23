@@ -1,6 +1,8 @@
 geopandas
 py7zr
 rich
+zarr
+xarray >= 2025.06.0
 
 matplotlib
 cartopy
