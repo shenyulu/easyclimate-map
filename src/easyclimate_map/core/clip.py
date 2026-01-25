@@ -14,7 +14,7 @@ __all__ = [
 
 import cartopy.crs as ccrs
 import geopandas as gpd
-import matplotlib
+import matplotlib.axes
 from geopandas.geodataframe import GeoDataFrame
 from ..core.datanode import DataNode
 

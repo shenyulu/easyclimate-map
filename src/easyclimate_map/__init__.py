@@ -3,6 +3,7 @@ from .version import __version__, show_versions
 from .map.map_zh_CN import *
 from .map.map_tibetan_plateau import *
 from .core.tool import *
+from .core.clip import *
 
 from rich import print
 

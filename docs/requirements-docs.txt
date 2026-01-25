@@ -6,6 +6,9 @@ xarray >= 2025.06.0
 
 matplotlib
 cartopy
+cmaps
+netCDF4
+numpy
 sphinx == 8.2.3
 shibuya
 sphinx-gallery == 0.19.0
