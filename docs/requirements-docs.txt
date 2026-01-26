@@ -10,6 +10,6 @@ sphinx-gallery == 0.19.0
 sphinx-autoapi == 3.6.1
 snowballstemmer == 3.0.1
 sphinx_iconify == 0.3.0
-sphinx_design == 0.6.1
+sphinx_design == 0.7.0
 sphinx-copybutton == 0.5.2
 joblib
