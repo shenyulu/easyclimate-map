@@ -7,7 +7,7 @@ cartopy
 sphinx == 8.2.3
 shibuya
 sphinx-gallery == 0.19.0
-sphinx-autoapi == 3.6.1
+sphinx-autoapi == 3.7.0
 snowballstemmer == 3.0.1
 sphinx_iconify == 0.3.0
 sphinx_design == 0.6.1
