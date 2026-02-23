@@ -253,7 +253,7 @@ ax.add_geometries(
 )
 
 hjz_provinces_polygon_clip = eclmap.clip_rectangle_geometry(
-    hjz_provinces_polygon, 
+    hjz_provinces_polygon,
     [112, 125, 24, 32]
 )
 clip = eclmap.get_geometry_path(hjz_provinces_polygon_clip, ax)
