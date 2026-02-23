@@ -1,0 +1,16 @@
+easyclimate_map.map
+===================
+
+.. py:module:: easyclimate_map.map
+
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /technical/api/easyclimate_map/map/map_tibetan_plateau/index
+   /technical/api/easyclimate_map/map/map_zh_CN/index
+
+

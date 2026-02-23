@@ -1,0 +1,18 @@
+﻿easyclimate\_map.core.datanode
+==============================
+
+.. automodule:: easyclimate_map.core.datanode
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      open_datanode
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      DataNode
+   

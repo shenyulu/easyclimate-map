@@ -1,0 +1,52 @@
+
+:orphan:
+
+.. _sphx_glr_auto_gallery_zh_CN_sg_execution_times:
+
+
+Computation times
+=================
+**00:39.820** total execution time for 6 files **from auto_gallery/zh_CN**:
+
+.. container::
+
+  .. raw:: html
+
+    <style scoped>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script type="text/javascript" class="init">
+    $(document).ready( function () {
+        $('table.sg-datatable').DataTable({order: [[1, 'desc']]});
+    } );
+    </script>
+
+  .. list-table::
+   :header-rows: 1
+   :class: table table-striped sg-datatable
+
+   * - Example
+     - Time
+     - Mem (MB)
+   * - :ref:`sphx_glr_auto_gallery_zh_CN_plot_zh_CN_provinces.py` (``plot_zh_CN_provinces.py``)
+     - 00:08.451
+     - 0.0
+   * - :ref:`sphx_glr_auto_gallery_zh_CN_plot_zh_CN_river3.py` (``plot_zh_CN_river3.py``)
+     - 00:08.094
+     - 0.0
+   * - :ref:`sphx_glr_auto_gallery_zh_CN_plot_zh_CN_nation.py` (``plot_zh_CN_nation.py``)
+     - 00:07.216
+     - 0.0
+   * - :ref:`sphx_glr_auto_gallery_zh_CN_plot_zh_CN_river1.py` (``plot_zh_CN_river1.py``)
+     - 00:05.696
+     - 0.0
+   * - :ref:`sphx_glr_auto_gallery_zh_CN_plot_zh_CN_2nd_administration.py` (``plot_zh_CN_2nd_administration.py``)
+     - 00:05.241
+     - 0.0
+   * - :ref:`sphx_glr_auto_gallery_zh_CN_plot_zh_CN_1st_administration.py` (``plot_zh_CN_1st_administration.py``)
+     - 00:05.122
+     - 0.0

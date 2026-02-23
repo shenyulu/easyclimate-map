@@ -1,0 +1,13 @@
+﻿easyclimate\_map.core.clip
+==========================
+
+.. automodule:: easyclimate_map.core.clip
+
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      clip_rectangle_geometry
+      get_geometry_path
+   

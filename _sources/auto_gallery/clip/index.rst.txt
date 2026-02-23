@@ -1,0 +1,44 @@
+
+
+.. _sphx_glr_auto_gallery_clip:
+
+Clip
+------------------------------------
+
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbnails">
+
+.. thumbnail-parent-div-open
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Demonstrate clipping gridded meteorological fields with administrative boundaries. This example overlays precipitation (filled contours), 500 hPa geopotential height (contours), and 850 hPa wind vectors, then clips the layers to selected provinces.">
+
+.. only:: html
+
+  .. image:: /auto_gallery/clip/images/thumb/sphx_glr_plot_core_clip_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_auto_gallery_clip_plot_core_clip.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Clip Sample</div>
+    </div>
+
+
+.. thumbnail-parent-div-close
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /auto_gallery/clip/plot_core_clip
+
