@@ -14,13 +14,21 @@ List of Functions and Classes (API)
 
 .. automodule:: easyclimate-map
 
+Core❤️
+----------------------------------------
+
+.. autosummary::
+    :toctree: generated/
+
+    easyclimate_map.core.datanode
+    easyclimate_map.core.tool
+    easyclimate_map.core.clip
+
 Map🗺️
 ----------------------------------------
 
 .. autosummary::
     :toctree: generated/
 
-    easyclimate_map.map_zh_CN
-    easyclimate_map.map_tibetan_plateau
-    easyclimate_map.tool
-
+    easyclimate_map.map.map_zh_CN
+    easyclimate_map.map.map_tibetan_plateau

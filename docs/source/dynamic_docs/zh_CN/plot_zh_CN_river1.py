@@ -29,7 +29,7 @@ zh_river1_line.plot()
 # Add gridlines, coastlines, China's national boundary line geometries (red lines, no fill), and level 1 river line geometries (blue lines, no fill).
 # This step demonstrates advanced map projections and geometry overlays for rivers.
 # Parameter Details:
-# 
+#
 # - set_extent: Defines the map display range.
 # - gridlines: Adds latitude/longitude grid with labels.
 # - coastlines: Draws global coastlines (50m resolution).
@@ -38,8 +38,8 @@ fig, ax = plt.subplots(subplot_kw={"projection": ccrs.PlateCarree(central_longit
 
 ax.set_extent([70, 140, 0, 50])
 ax.gridlines(
-    draw_labels=["left", "bottom"], 
-    color="grey", 
+    draw_labels=["left", "bottom"],
+    color="grey",
     alpha=0.5, linestyle="--"
 )
 ax.coastlines(color="k", lw = 0.5, resolution = "50m")
@@ -76,15 +76,15 @@ zh_river1_polygon.plot()
 # Add gridlines, coastlines, China's national boundary line geometries (red lines, no fill), and level 1 river polygon geometries (blue fill, no edges).
 # This step demonstrates area fill effects for rivers, suitable for highlighting water bodies or hydrological maps.
 # Parameter Details:
-# 
+#
 # - Similar to above step, but with facecolor="b" for area fill and edgecolor="none" for no borders on rivers.
 # - Applicable for overlaying other data layers, such as flow directions or precipitation distributions.
 fig, ax = plt.subplots(subplot_kw={"projection": ccrs.PlateCarree(central_longitude=180)})
 
 ax.set_extent([70, 140, 0, 50])
 ax.gridlines(
-    draw_labels=["left", "bottom"], 
-    color="grey", 
+    draw_labels=["left", "bottom"],
+    color="grey",
     alpha=0.5, linestyle="--"
 )
 ax.coastlines(color="k", lw = 0.5, resolution = "50m")
