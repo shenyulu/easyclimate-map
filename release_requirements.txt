@@ -1,6 +1,7 @@
 geopandas
-cartopy
 py7zr
 rich
 zarr
+cartopy
+scipy
 xarray >= 2025.06.0
