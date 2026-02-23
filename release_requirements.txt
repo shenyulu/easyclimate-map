@@ -1,4 +1,5 @@
 geopandas
+cartopy
 py7zr
 rich
 zarr
