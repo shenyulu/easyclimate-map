@@ -2,7 +2,7 @@ name: Publish easyclimate to PyPI
 
 on:
   release:
-    types: [published, edited]
+    types: [published]
 
 jobs:
   UnitTesting:
@@ -29,7 +29,7 @@ jobs:
     needs: UnitTesting
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       id-token: write
 
     steps:
@@ -63,3 +63,11 @@ jobs:
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           packages-dir: dist/
+
+      - name: Upload package files to Release Assets
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/*.whl
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
