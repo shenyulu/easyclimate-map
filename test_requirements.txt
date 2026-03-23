@@ -7,7 +7,7 @@ scipy
 xarray >= 2025.06.0
 
 pytest == 9.0.1
-pytest-cov == 7.0.0
+pytest-cov == 7.1.0
 pytest-mpl == 0.18.0
 pytest-xdist
 pre-commit
