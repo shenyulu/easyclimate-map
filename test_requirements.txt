@@ -4,7 +4,7 @@ rich
 zarr
 cartopy
 scipy
-xarray >= 2025.06.0
+xarray >= 2025.6.1
 
 pytest == 9.0.1
 pytest-cov == 7.0.0
