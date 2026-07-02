@@ -4,4 +4,4 @@ rich
 zarr
 cartopy
 scipy
-xarray >= 2025.06.0
+xarray >= 2025.6.1
